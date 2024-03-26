@@ -1,5 +1,9 @@
 ---
 import "@/styles/global.css";
+interface Props {
+    title: string;
+}
+const { title } = Astro.props;
 ---
 
 
@@ -39,5 +43,5 @@ import "@/styles/global.css";
   />
   <!-- Font Preloads -->
 
-  <title>Document</title>
+  <title>{title}</title>
 </head>
